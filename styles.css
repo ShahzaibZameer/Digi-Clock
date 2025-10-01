@@ -31,15 +31,23 @@ footer {
   padding: 10px;
   background: darkgreen;
   color:white;
-  font-size: 14px;
+  font-size: 15px;
 }
 #stopBtn{
  position: absolute;
   top: calc(50% + 2cm);  /* clock ke baad 2cm niche */
   left: 50%;             /* horizontal center */
   transform: translateX(-50%);
-font-size:larger;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  padding:10px 20px;
+  background-color: green;
+  color: white;
+  transition: background 0.3s;
 }
 #stopBtn:hover {
-  background-color:lightyellow;
+  background-color:lightgreen;
 }

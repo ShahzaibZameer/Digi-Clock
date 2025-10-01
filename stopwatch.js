@@ -1,48 +1,38 @@
-let startTime, updatedTime, difference, tInterval;
-let running = false;
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
+let timer = null;
 
-function start() {
-  if (!running) {
-    startTime = new Date().getTime() - (difference || 0);
-    tInterval = setInterval(updateTime, 1000);
-    running = true;
-  }
+function updateStopwatch() {
+  seconds++;
+  if (seconds === 60) { seconds = 0; minutes++; }
+  if (minutes === 60) { minutes = 0; hours++; }
+
+  let h = hours < 10 ? "0" + hours : hours;
+  let m = minutes < 10 ? "0" + minutes : minutes;
+  let s = seconds < 10 ? "0" + seconds : seconds;
+
+  document.getElementById("stopwatch").textContent = `${h}:${m}:${s}`;
 }
 
-function stop() {
-  clearInterval(tInterval);
-  running = false;
+function startStopwatch() {
+  if (!timer) timer = setInterval(updateStopwatch, 1000);
 }
 
-function reset() {
-  clearInterval(tInterval);
-  running = false;
-  difference = 0;
+function stopStopwatch() {
+  clearInterval(timer);
+  timer = null;
+}
+
+function resetStopwatch() {
+  clearInterval(timer);
+  timer = null;
+  hours = 0; minutes = 0; seconds = 0;
   document.getElementById("stopwatch").textContent = "00:00:00";
 }
 
-function updateTime() {
-  updatedTime = new Date().getTime();
-  difference = updatedTime - startTime;
-
-  let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-  let minutes = Math.floor((difference / (1000 * 60)) % 60);
-  let seconds = Math.floor((difference / 1000) % 60);
-
-if (hours < 10) {
-  hours = "0" + hours;
-}
-
-if (minutes < 10) {
-  minutes = "0" + minutes;
-}
-
-if (seconds < 10) {
-  seconds = "0" + seconds;
-}
-
-
-
-  document.getElementById("stopwatch").textContent =
-    hours + ":" + minutes + ":" + seconds;
-}
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("startBtn").addEventListener("click", startStopwatch);
+  document.getElementById("stopBtn").addEventListener("click", stopStopwatch);
+  document.getElementById("resetBtn").addEventListener("click", resetStopwatch);
+});
