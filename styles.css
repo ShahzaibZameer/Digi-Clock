@@ -1,7 +1,7 @@
 h1{
     color:white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;/*center ma kr dy ga*/
+    font-family: Arial, Helvetica, sans-serif;/*font style change kr dy ga*/
 }
 body{
     background-color: lightgreen;
@@ -10,22 +10,22 @@ body{
 #clock{
    color:white;
       font-size: 6rem;        /* bada size */
-      font-weight: bold;
+      font-weight: bold;/*text ko mota kr dy ga*/
       letter-spacing: 5px;
       
 height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;/*ikhata kr dy ga*/
+  justify-content: center;/*center kr dy ga*/
+  align-items: center;/*center kr dy ga*/
+   position: absolute;/*fixed rhy gi*/
+  top: 50%;/*top ka center my rhy ga*/
+  left: 50%;/*horizontal ka center ma rhy ga*/
   transform: translate(-50%, -50%) translateY(-1.5cm);
 }
 footer {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 0;/*last ka center ma rhy ga*/
+  left: 0;/*horizontal ka center ma rhy ga*/
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -34,15 +34,15 @@ footer {
   font-size: 15px;
 }
 #stopBtn{
- position: absolute;
+ position: absolute;/*fixed rhy gi*/
   top: calc(50% + 2cm);  /* clock ke baad 2cm niche */
   left: 50%;             /* horizontal center */
   transform: translateX(-50%);
   cursor: pointer;
-  border: none;
+  border: none;/*border khatam kr dy ga*/
   font-size: 16px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 5px;/*sides gol kr dy ga*/
   padding:10px 20px;
   background-color: green;
   color: white;

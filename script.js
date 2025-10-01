@@ -25,13 +25,13 @@ if (seconds < 10) {
 }
 
   const timeString = hours + ":" + minutes + ":" + seconds;
-
+/*value get kry ga*/
   document.getElementById("clock").textContent = timeString;
 
 }
 
-
+/*built in fun ha*/
 setInterval(updateClock, 1000);
 
-
+/*update krta rhy ga time*/
 updateClock();

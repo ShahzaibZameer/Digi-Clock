@@ -1,28 +1,28 @@
 h1{
   color: white;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;/*font stylechange kr dy ga*/
 }
 body {
   
-  text-align: center;
+  text-align: center; /*center ma kr dy ga*/
   margin-top: 50px;
   background:lightgreen;
 }
 
 #stopwatch {
    font-size: 6rem;        /* bada size */
-      font-weight: bold;
-      letter-spacing: 5px;
+      font-weight: bold; /* lafz mota krny ka liye*/
+      letter-spacing: 5px; /*space deny ka liye*/
   
   color: white;
 }
 
 button {
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px; /*lafz ka size*/
+  padding: 10px 20px; /*adjustment*/
+  margin: 5px; /*lafz ko side pr adjust krna ho*/
+  border: none; /*border khatam krny ka liye*/
+  border-radius: 5px; /*sides gol kr dy ga*/
   cursor: pointer;
   background-color: green;
   color: white;
@@ -37,8 +37,8 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center;
-  padding: 10px;
+  text-align: center; /*center ma aa jye ga*/
+  padding: 10px; /*adjustment*/
   background: darkgreen;
   color:white;
   font-size: 14px;
