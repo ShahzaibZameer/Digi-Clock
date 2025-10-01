@@ -27,11 +27,11 @@ if (seconds < 10) {
   const timeString = hours + ":" + minutes + ":" + seconds;
 
   document.getElementById("clock").textContent = timeString;
-  console.log(timeString);
+
 }
 
-// Update every second
+
 setInterval(updateClock, 1000);
 
-// Run once at start
+
 updateClock();

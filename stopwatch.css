@@ -1,0 +1,40 @@
+h1{
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightgreen;
+}
+#stopwatch{
+    color:white;
+      font-size: 6rem;        /* bada size */
+      font-weight: bold;
+      letter-spacing: 5px;
+      
+height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-1.5cm);
+
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: background 0.3s;
+}

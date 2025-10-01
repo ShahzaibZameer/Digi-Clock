@@ -33,3 +33,13 @@ footer {
   color:white;
   font-size: 14px;
 }
+#stopBtn{
+ position: absolute;
+  top: calc(50% + 2cm);  /* clock ke baad 2cm niche */
+  left: 50%;             /* horizontal center */
+  transform: translateX(-50%);
+font-size:larger;
+}
+#stopBtn:hover {
+  background-color:lightyellow;
+}
