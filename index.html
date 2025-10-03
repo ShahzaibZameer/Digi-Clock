@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digi Clock & Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>My Digital Clock & Stopwatch</h1>
+
+  <!-- 🔥 Navigation Buttons -->
+  <div class="nav-buttons">
+    <button onclick="showSection('clockSection')">Clock</button>
+    <button onclick="showSection('stopwatchSection')">Stopwatch</button>
+  </div>
+
+  <!-- Clock Section -->
+  <div id="clockSection">
+    <h2>Digital Clock</h2>
+    <div id="clock"></div>
+  </div>
+
+  <!-- Stopwatch Section -->
+  <div id="stopwatchSection" style="display:none;">
+    <h2>Stopwatch</h2>
+    <div id="stopwatch">00:00:00</div>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <footer>Shahzaib & Daniyal</footer>
+</body>
+</html>
