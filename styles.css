@@ -1,53 +1,97 @@
-h1{
-    color:white;
-    text-align: center;/*center ma kr dy ga*/
-    font-family: Arial, Helvetica, sans-serif;/*font style change kr dy ga*/
+body {
+  background-color: lightgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: lightgreen;
-      
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
-#clock{
-   color:white;
-      font-size: 6rem;        /* bada size */
-      font-weight: bold;/*text ko mota kr dy ga*/
-      letter-spacing: 5px;
-      
-height: 100%;
-  display: flex;/*ikhata kr dy ga*/
-  justify-content: center;/*center kr dy ga*/
-  align-items: center;/*center kr dy ga*/
-   position: absolute;/*fixed rhy gi*/
-  top: 50%;/*top ka center my rhy ga*/
-  left: 50%;/*horizontal ka center ma rhy ga*/
-  transform: translate(-50%, -50%) translateY(-1.5cm);
-}
+
 footer {
   position: fixed;
-  bottom: 0;/*last ka center ma rhy ga*/
-  left: 0;/*horizontal ka center ma rhy ga*/
+  bottom: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
   background: darkgreen;
-  color:white;
+  color: white;
   font-size: 15px;
 }
-#stopBtn{
- position: absolute;/*fixed rhy gi*/
-  top: calc(50% + 2cm);  /* clock ke baad 2cm niche */
-  left: 50%;             /* horizontal center */
-  transform: translateX(-50%);
-  cursor: pointer;
-  border: none;/*border khatam kr dy ga*/
-  font-size: 16px;
-  margin: 5px;
-  border-radius: 5px;/*sides gol kr dy ga*/
-  padding:10px 20px;
-  background-color: green;
-  color: white;
-  transition: background 0.3s;
+
+/* 🔥 Navigation Buttons */
+.nav-buttons {
+  text-align: center;
+  margin: 20px;
 }
-#stopBtn:hover {
-  background-color:lightgreen;
+
+.nav-buttons button {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;/**/
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-buttons button:hover {
+  background-color: brown;
+  color: black;
+  transform: scale(1.05);/**/
+}
+
+/* 🔥 Section container design */
+#clockSection, 
+#stopwatchSection {
+  background: white;
+  color: black;
+  padding: 30px;
+  margin: 30px auto;
+  width: 400px;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+/* Clock ka text style */
+#clock {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: darkgreen;
+  margin-top: 20px;
+}
+
+/* Stopwatch ka text style */
+#stopwatch {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: darkgreen;
+  margin: 20px ;
+}
+
+/* Stopwatch buttons */
+#startBtn, #stopBtn, #resetBtn {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#startBtn:hover, #stopBtn:hover, #resetBtn:hover {
+  background-color:brown;
+  color: black;
+  transform: scale(1.05);
 }
